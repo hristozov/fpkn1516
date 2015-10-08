@@ -8,4 +8,4 @@
 * Форми за управление на изпълнението - [`if`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_idx_98) и [`cond`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_idx_106). Предикати за равенство и неравенство. [Логически операции](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_idx_118).
 * Вградени аритметични процедури. `remainder` (`mod` в REPL.it), `quotient` (`div` в REPL.it).
 * Форма [`define`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-8.html#%_idx_190). Дефиниране на процедури.
-* Линейна рекурсия. Симулиране на итеративен процес с рекурсия.
+* Линейна рекурсия. Симулиране на итеративен процес (цикъл) с рекурсия.
