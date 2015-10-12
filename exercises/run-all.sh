@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cd 01 && ./run.sh && cd ..
+for d in */ ; do
+    cd $d && ./run.sh && cd ..
+done
