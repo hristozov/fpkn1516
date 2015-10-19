@@ -1,10 +1,11 @@
 (load "../../lib/scm/unit.scm")
 
+; Итеративен вариант на броенето на цифри. Тук резултатът е просто един брояч.
 (define (count-digits-iter n)
   (define (helper current result)
     (if (<= current 0)
         result
-        (helper (quotient current 10) 
+        (helper (quotient current 10)
                 (+ result 1))))
   (helper n 0))
 
