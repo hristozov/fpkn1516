@@ -10,11 +10,9 @@
   (define (helper i)
     (cond
        ((< i a) #f)
-       ((= a (remainder i (mask (expt 10 (count-digits-iter a))))) #t)
+       ((= a (remainder i (expt 10 (count-digits-iter a)))) #t)
        (else (helper (quotient i 10)))))
   (helper n))
-
-; todo - без let
 
 (assert-true (substr? 1234 23))
 (assert-true (substr? 1234 12))
