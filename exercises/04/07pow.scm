@@ -5,7 +5,7 @@
 ; от текущия индекс. Затова подаваме за term процедура, която игнорира индекса
 ; и винаги връща стойността на x.
 (define (pow-accumulate x n)
-  (accumulate (lambda (_) x) * 1 1 plus1 n))
+  (accumulate 1 plus1 n (lambda (_) x) * 1))
 
 (assert= 27 (pow-accumulate 3 3))
 (assert= 1024 (pow-accumulate 2 10))
