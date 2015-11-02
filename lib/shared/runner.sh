@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 BLACK_FOREGROUND=`tput setaf 0`
 RED_BACKGROUND=`tput setab 1`
 GREEN_BACKGROUND=`tput setab 2`
@@ -8,12 +10,12 @@ NORMAL_COLORS=`tput sgr 0`
 
 startTime=`date +%s`
 
-function printFileHeader () {
+printFileHeader () {
 	file=$1
 	echo "${WHITE_BACKGROUND}${BLACK_FOREGROUND}${file}${NORMAL_COLORS}"
 }
 
-function printFile () {
+printFile () {
 	file=$1
 	output=$2
 
@@ -33,9 +35,9 @@ function printFile () {
 	echo
 }
 
-function printSummary() {
+printSummary () {
 	num_total=$((num_passed + num_failed))
-	
+
 	end=`date +%s`
 	runtime=$((end-startTime))
 

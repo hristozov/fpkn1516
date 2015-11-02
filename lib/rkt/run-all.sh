@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
@@ -7,7 +7,7 @@ set -e
 for file in *.rkt; do
   printFileHeader $file
 
-  output=`mktemp -t scmtest`
+  output=`mktemp -t rkttest.XXX`
 
   racket $file > $output
   printFile $file $output

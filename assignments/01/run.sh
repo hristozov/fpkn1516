@@ -1,2 +1,2 @@
-#!/bin/sh
-/bin/sh ../../lib/scm/run-all.sh
+#!/bin/bash
+/bin/bash ../../lib/scm/run-all.sh

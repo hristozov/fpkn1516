@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
@@ -7,7 +7,7 @@ set -e
 for file in *.hs; do
 	printFileHeader $file
 
-	output=`mktemp -t scmtest`
+	output=`mktemp -t hstest.XXX`
 
 	ghc -i$(dirname $0) $file -o a.out
 	./a.out > $output

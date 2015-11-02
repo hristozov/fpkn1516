@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
@@ -6,8 +6,8 @@ set -e
 
 for file in *.scm; do
 	printFileHeader $file
-	
-	output=`mktemp -t scmtest`
+
+	output=`mktemp -t scmtest.XXX`
 
 	plt-r5rs $file > $output
 	printFile $file $output
