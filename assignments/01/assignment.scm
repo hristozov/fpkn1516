@@ -1,7 +1,19 @@
 (load "../../lib/scm/unit.scm")
 
 (define (sum-step start end step)
-  0)
+  (define (helper-asc current result)
+    (if (> current end)
+        result
+        (helper-asc (+ current step)
+                    (+ current result))))
+  (define (helper-desc current result)
+    (if (< current end)
+        result
+        (helper-desc (+ current step)
+                     (+ current result))))
+  (if (< step 0)
+    (helper-desc start 0)
+    (helper-asc start 0)))
 
 (assert= 55 (sum-step 1 10 1))
 (assert= 25 (sum-step 1 10 2))
