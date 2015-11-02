@@ -1,5 +1,5 @@
 (define (_get-approx-comparator delta)
-  (lambda (e a) 
+  (lambda (e a)
     (> delta (abs (- e a)))))
 
 (define (_is-approx-comparator f)
@@ -36,7 +36,7 @@
     ((_is-approx-comparator val) "<approx>")
     ((list? val) (string-append
                    "("
-                   (_list-stringify val) 
+                   (_list-stringify val)
                    ")"))
     (else "<unknown>")))
 
@@ -49,10 +49,10 @@
 
 (define (_assert p expected actual actual-sexp)
   (_assert-with-message
-    (string-append 
+    (string-append
       (_stringify actual-sexp)
       " -> "
-      (_stringify actual) 
+      (_stringify actual)
       " (actual) " (_stringify p)
       " " (_stringify expected)
       " (expected)")

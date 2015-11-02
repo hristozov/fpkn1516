@@ -6,7 +6,7 @@ set -e
 
 for file in *.rkt; do
   printFileHeader $file
-  
+
   output=`mktemp -t scmtest`
 
   racket $file > $output
