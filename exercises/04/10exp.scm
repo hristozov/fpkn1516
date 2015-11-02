@@ -1,6 +1,6 @@
 (load "../../lib/scm/unit.scm")
-(load "04accumulate.scm")
-(load "05fact.scm")
+(load "05accumulate.scm")
+(load "06fact.scm")
 
 (define (ex x)
   (define (term n)
