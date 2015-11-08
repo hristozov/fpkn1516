@@ -9,6 +9,7 @@
 Примери
 -------
 `(zad1 1 10 (labda (x) (remainder x 2)) 0) -> 30 (= 2 + 4 + 6 + 8 + 10)`
+
 `(zad1 1 10 (labda (x) (remainder x 2)) 1) -> 25 (= 1 + 3 + 5 + 7 + 9)`
 
 Hint
