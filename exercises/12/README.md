@@ -8,5 +8,8 @@
 - синтаксис на guard-овете - пример на `max'` с guard-ове
 - pattern matching - пример с `fact` 
 - `countDigits`
+- синтаксис на `let` и `where`
 - `reverseDigits`
 - `prime`
+- `fibonacci` - итеративно
+- `fastpow`
