@@ -9,12 +9,12 @@
 Примери
 -------
 
-`((stream-ref (construct-stream 0) 2) 7) -> 7 (= 0 * 2 + 7)`
+`((stream-ref (construct-stream 0) 2) 7) -> 7 (= 2 * 0 + 7)`
 
-`((stream-ref (construct-stream 2) 0) 7) -> 7 (= 2 * 0 + 7)`
+`((stream-ref (construct-stream 2) 0) 7) -> 7 (= 0 * 2 + 7)`
 
 `((stream-ref (construct-stream 0) 0) 0) -> 0 (= 0 * 0 + 0)`
 
 `((stream-ref (construct-stream 1) 1) 4) -> 5 (= 1 * 1 + 4)`
 
-`((stream-ref (construct-stream 5) 3) 4) -> 19 (= 5 * 3 + 4)`
+`((stream-ref (construct-stream 5) 3) 4) -> 19 (= 3 * 5 + 4)`
